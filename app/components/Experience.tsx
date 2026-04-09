@@ -5,6 +5,7 @@ type ExperienceProps = {
   company: string;
   from: string;
   to?: string;
+  className?: string;
   children: React.ReactNode;
 };
 
@@ -13,6 +14,7 @@ export default function Experience({
   company,
   from,
   to,
+  className,
   children,
 }: ExperienceProps) {
   const t = useExtracted();
@@ -29,7 +31,7 @@ export default function Experience({
       })
     : t("Aujourd'hui");
   return (
-    <div>
+    <div className={className}>
       <div className="text-lg">
         <span className="font-semibold text-zinc-900 dark:text-zinc-50">
           {role}
