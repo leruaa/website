@@ -20,7 +20,7 @@
   "w/2eiQ": "Prise en charge du projet de bout en bout, de la rédaction des specs jusqu'à l'implémentation et les tests.",
   "uk2kQ2": "Développement de la fonctionnalité private proving pour SP1",
   "n5GAE1": "Génération rapide de preuves sur GPUs sans révéler les inputs à un tiers, grâce à l’utilisation de Trusted Execution Environments (TEEs).",
-  "o3VfBK": "Mise en place d’un système distribué permettant d’envoyer des requêtes de génération de preuves à des GPUs situés dans des TEEs.",
+  "Jb6GFe": "Mise en place d’un système distribué avec gRPC permettant d’envoyer des requêtes de génération de preuves à des GPUs situés dans des TEEs.",
   "CHVkv7": "Développement d’un SDK pour vérifier la provenance de photos",
   "InG7E0": "Utilisation de SP1 pour prouver qu’une photo est authentique (non générée par IA), en tirant partie des fonctionnalités the iOS et Android pour certifier que la photo provient d’un capteur photo.",
   "15RlE0": "Création d’un SDK en React Native permettant d’intégrer les preuve dans les meta data des photos en utilisant le protocole C2PA.",

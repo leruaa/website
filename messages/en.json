@@ -20,7 +20,7 @@
   "w/2eiQ": "Owned the project end-to-end, from writing the specs through to implementation (in revm, op-node and op-geth) and testing",
   "uk2kQ2": "Development of the private proving feature for SP1",
   "n5GAE1": "Fast proof generation on GPUs without revealing inputs to a third party, leveraging Trusted Execution Environments (TEEs)",
-  "o3VfBK": "Design and implementation of a distributed system for routing proof generation requests to GPU nodes running inside TEEs",
+  "Jb6GFe": "Setting up a distributed system with gRPC to send proof generation requests to GPUs located in TEEs.",
   "CHVkv7": "Development of an SDK for verifying photo authenticity",
   "InG7E0": "Used SP1 to prove that a photo is genuine (not AI-generated), leveraging native iOS and Android features to certify that it originated from a physical camera sensor",
   "15RlE0": "Built a React Native SDK to embed proofs into photo metadata using the C2PA protocol",
@@ -40,7 +40,7 @@
   "59iNqh": "Working for a variety of clients (Eurosport, Citigroup, Pfizer…) in teams of 2 to 10 people",
   "QGhPr4": "Acted as technical lead on several assignments, covering architecture, best practices, production deployment and knowledge transfer",
   "c4WV7l": "Involved in scoping and specification phases, managing projects both on fixed-price and time-and-materials basis, with Agile/Scrum experience across multiple projects and hands-on implementation of unit testing",
-  "q7xBwU": "Education",
+  "yoc4SI": "Education",
   "/Se07O": "{from} to {to}",
   "y4Hcoc": "Present"
 }

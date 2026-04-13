@@ -75,6 +75,8 @@ export default function Home() {
                   {format.list([
                     "Tokio",
                     "Axum",
+                    "Tonic",
+                    "gRPC",
                     "SQLx",
                     "React",
                     "React Native",
@@ -204,7 +206,7 @@ export default function Home() {
                   title={t(
                     "Développement de la fonctionnalité private proving pour SP1",
                   )}
-                  stack={["Rust", "Docker", "AWS CDK"]}
+                  stack={["Rust", "gRPC", "Docker", "AWS CDK"]}
                 >
                   <ul className="list-disc ml-4">
                     <li>
@@ -214,7 +216,7 @@ export default function Home() {
                     </li>
                     <li>
                       {t(
-                        "Mise en place d’un système distribué permettant d’envoyer des requêtes de génération de preuves à des GPUs situés dans des TEEs.",
+                        "Mise en place d’un système distribué avec gRPC permettant d’envoyer des requêtes de génération de preuves à des GPUs situés dans des TEEs.",
                       )}
                     </li>
                   </ul>
@@ -350,7 +352,7 @@ export default function Home() {
 
             {/* Education */}
             <section className="break-before-page">
-              <SectionTitle>{t("education")}</SectionTitle>
+              <SectionTitle>{t("Formation")}</SectionTitle>
               <Education
                 school="IUP GMI d’Avignon"
                 degree="Master Informatique Traitement Automatique de l’Information Multimédia"
