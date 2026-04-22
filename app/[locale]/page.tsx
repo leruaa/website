@@ -5,14 +5,14 @@ import { MapPin, Mail } from "lucide-react";
 import { useExtracted, useFormatter, useLocale } from "next-intl";
 import SectionTitle from "../components/SectionTitle";
 
-import SuccinctEn from "@/app/components/experiences/en/succinct.mdx";
-import SuccinctFr from "@/app/components/experiences/fr/succinct.mdx";
-import EskerEn from "@/app/components/experiences/en/esker.mdx";
-import EskerFr from "@/app/components/experiences/fr/esker.mdx";
-import SteriaEn from "@/app/components/experiences/en/steria.mdx";
-import SteriaFr from "@/app/components/experiences/fr/steria.mdx";
-import AricieEn from "@/app/components/experiences/en/aricie.mdx";
-import AricieFr from "@/app/components/experiences/fr/aricie.mdx";
+import SuccinctEn from "@/app/components/en/Succinct.mdx";
+import SuccinctFr from "@/app/components/fr/Succinct.mdx";
+import EskerEn from "@/app/components/en/Esker.mdx";
+import EskerFr from "@/app/components/fr/Esker.mdx";
+import SteriaEn from "@/app/components/en/Steria.mdx";
+import SteriaFr from "@/app/components/fr/Steria.mdx";
+import AricieEn from "@/app/components/en/Aricie.mdx";
+import AricieFr from "@/app/components/fr/Aricie.mdx";
 
 export default function Home() {
   const locale = useLocale();
