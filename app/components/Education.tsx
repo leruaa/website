@@ -1,4 +1,4 @@
-import { useExtracted, useFormatter } from "next-intl";
+import { useExtracted } from "next-intl";
 
 type EducationProps = {
   school: string;
@@ -17,7 +17,7 @@ export default function Education({
   const t = useExtracted();
 
   return (
-    <div key={school} className="flex flex-row gap-4 mb-2">
+    <div key={school} className="flex flex-row gap-4 mb-2 break-inside-avoid">
       <span className="text-sm text-zinc-400 dark:text-zinc-500 shrink-0 w-24 p-0.5">
         {t("{from} à {to}", { from, to })}
       </span>

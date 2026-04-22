@@ -1,0 +1,43 @@
+
+<Project title="Integration of the SP1 zkVM into multiple projects">
+
+* Implementation of ZK proof generation systems for various clients as part of migrations to SP1
+* Feature development and maintenance of various Open Source projects built on SP1, such as [RSP] and [SP1 Contract Call]
+* Developpment in **Rust** and **Solidity**, CI/CD with **GitHub Actions**
+
+</Project>
+
+<Project title="Development of the _operator fee_ feature for Optimism">
+
+* Owned the project end-to-end in collaboration with OP Labs, including [proposal], [specs], implementation and testing
+* Implementation across the execution layer (**OP Geth**, **Reth** and **Revm**) and the consensus layer with **OP Node** 
+
+</Project>
+
+<Project title="Development of the _2FA_ feature for SP1">
+
+* Leveraging AWS **Nitro enclaves** to provide a secure hardware environment for running SP1 programs
+* Interfacing the 2FA environment with the Succinct Prover Network with a **gRPC** client in **Rust** using **Tonic**
+* Automated deployment on **AWS** using AWS **CDK** and **Docker**
+
+</Project>
+
+<Project title="Development of the _private proving_ feature for SP1">
+
+* Fast proof generation on GPUs without revealing inputs to a third party, leveraging Trusted Execution Environments (TEEs)
+* Building a distributed system in **Rust** with **gRPC** to handle proof generation requests and distribute them to workers with GPUs located in TEEs
+* Interfacing with the Succinct Prover Network via **gRPC** to maintain proof requests status and handle billing
+
+</Project>
+
+<Project title="Development of a SDK for verifying photo authenticity">
+
+* Used SP1 to prove that a photo is genuine (not AI-generated), leveraging native iOS and Android features to certify that it originated from a physical camera sensor
+* Built a **React Native** SDK to embed proofs into photo metadata using the **C2PA** protocol
+
+</Project>
+
+[RSP]: https://github.com/succinctlabs/rsp
+[SP1 Contract Call]: https://github.com/succinctlabs/sp1-contract-call
+[proposal]: https://gov.optimism.io/t/proposal-preview-operator-fee/9699
+[specs]: https://specs.optimism.io/protocol/isthmus/exec-engine.html?highlight=operator#operator-fee

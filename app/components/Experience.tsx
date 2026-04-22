@@ -1,6 +1,7 @@
 import { useExtracted, useFormatter } from "next-intl";
 
 type ExperienceProps = {
+  name: string;
   role: string;
   company: string;
   from: string;
@@ -32,15 +33,16 @@ export default function Experience({
     : t("Aujourd'hui");
   return (
     <div className={className}>
-      <div className="text-lg">
+      <h3 className="break-after-avoid">
         <span className="font-semibold text-zinc-900 dark:text-zinc-50">
           {role}
         </span>
         <span className="text-zinc-500 dark:text-zinc-400"> · {company}</span>
-      </div>
-      <span className="text-sm text-zinc-400 dark:text-zinc-500">
-        {t("{from} à {to}", { from: fromString, to: toString })}
-      </span>
+        <div className="text-sm text-zinc-400 dark:text-zinc-500">
+          {t("{from} à {to}", { from: fromString, to: toString })}
+        </div>
+      </h3>
+
       <div className="mt-2">{children}</div>
     </div>
   );

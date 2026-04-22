@@ -1,5 +1,6 @@
-import { useExtracted, useFormatter } from "next-intl";
+import { useFormatter } from "next-intl";
 import Title from "./Title";
+import ReactMarkdown from "react-markdown";
 
 type ProjectProps = {
   title: string;
@@ -8,18 +9,21 @@ type ProjectProps = {
 };
 
 export default function Project({ title, stack, children }: ProjectProps) {
-  const t = useExtracted();
   const format = useFormatter();
 
   return (
-    <div className="break-inside-avoid mb-2">
-      <Title>{title}</Title>
+    <div className="break-inside-avoid">
+      <Title>
+        <ReactMarkdown components={{ p: ({ children }) => <>{children}</> }}>
+          {title}
+        </ReactMarkdown>
+      </Title>
       {stack && stack.length > 0 && (
         <div className="text-zinc-500 dark:text-zinc-400 italic">
           {format.list(stack)}
         </div>
       )}
-      <div>{children}</div>
+      {children}
     </div>
   );
 }

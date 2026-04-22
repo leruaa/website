@@ -1,5 +1,6 @@
 @import "tailwindcss";
-
+@plugin "@tailwindcss/typography";
+@config "./tailwind.config.js";
 :root {
     --background: #ffffff;
     --foreground: #171717;
@@ -25,10 +26,6 @@ body {
     font-family: Arial, Helvetica, sans-serif;
 }
 
-section {
-    @apply mb-10;
-}
-
 a {
     @apply text-indigo-400 underline;
 }
@@ -41,7 +38,7 @@ a {
 
     @page {
         size: A4;
-        margin: 0.8cm 1cm;
+        margin: 1.2cm 1.6cm;
     }
 
     body {
@@ -49,5 +46,22 @@ a {
         color: black;
         -webkit-print-color-adjust: exact;
         print-color-adjust: exact;
+    }
+
+    /* Firefox has incomplete support for the modern break-* properties;
+       page-break-* are the legacy equivalents with broader print engine support. */
+    .break-after-avoid,
+    .break-after-avoid-page {
+        page-break-after: avoid;
+    }
+
+    .break-before-avoid,
+    .break-before-avoid-page {
+        page-break-before: avoid;
+    }
+
+    .break-inside-avoid,
+    .break-inside-avoid-page {
+        page-break-inside: avoid;
     }
 }
