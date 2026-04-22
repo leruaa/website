@@ -5,6 +5,8 @@ import { MapPin, Mail } from "lucide-react";
 import { useExtracted, useFormatter, useLocale } from "next-intl";
 import SectionTitle from "../components/SectionTitle";
 
+import OpenSourceEn from "@/app/components/en/OpenSource.mdx";
+import OpenSourceFr from "@/app/components/fr/OpenSource.mdx";
 import SuccinctEn from "@/app/components/en/Succinct.mdx";
 import SuccinctFr from "@/app/components/fr/Succinct.mdx";
 import EskerEn from "@/app/components/en/Esker.mdx";
@@ -19,6 +21,7 @@ export default function Home() {
   const t = useExtracted();
   const format = useFormatter();
 
+  const OpenSource = locale === "fr" ? OpenSourceFr : OpenSourceEn;
   const Succinct = locale === "fr" ? SuccinctFr : SuccinctEn;
   const Esker = locale === "fr" ? EskerFr : EskerEn;
   const Steria = locale === "fr" ? SteriaFr : SteriaEn;
@@ -116,43 +119,7 @@ export default function Home() {
         {/* Open Source */}
         <section>
           <SectionTitle>{t("Open Source")}</SectionTitle>
-          <ul>
-            <li>
-              {t.rich(
-                "Nombreuses contributions aux projets Open Source <reth>Reth</reth>, <revm>Revm</revm> et <alloy>Alloy</alloy>.",
-                {
-                  reth: (chunks) => (
-                    <a href="https://github.com/paradigmxyz/reth/pulls?q=is%3Apr+author%3Aleruaa+is%3Aclosed">
-                      {chunks}
-                    </a>
-                  ),
-                  revm: (chunks) => (
-                    <a href="https://github.com/bluealloy/revm/pulls?q=is%3Apr+is%3Aclosed+author%3Aleruaa">
-                      {chunks}
-                    </a>
-                  ),
-                  alloy: (chunks) => (
-                    <a href="https://github.com/alloy-rs/alloy/pulls?q=is%3Apr+is%3Aclosed+author%3Aleruaa">
-                      {chunks}
-                    </a>
-                  ),
-                },
-              )}
-            </li>
-            <li>
-              {t.rich(
-                "Création et maintenance des crates Rust <erc20>alloy-erc20</erc20> et <mev>alloy-mev</mev>.",
-                {
-                  erc20: (chunks) => (
-                    <a href="https://github.com/leruaa/alloy-erc20">{chunks}</a>
-                  ),
-                  mev: (chunks) => (
-                    <a href="https://github.com/leruaa/alloy-mev">{chunks}</a>
-                  ),
-                },
-              )}
-            </li>
-          </ul>
+          <OpenSource />
         </section>
 
         {/* Experience */}
