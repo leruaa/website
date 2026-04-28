@@ -41,7 +41,7 @@ export default function Home() {
           <ul className="mt-2 pl-0 flex flex-wrap gap-x-6 gap-y-1 text-sm text-zinc-500 dark:text-zinc-400 print:text-zinc-700">
             <li className="flex items-center gap-1.5">
               <MapPin size={13} />
-              <span>Lyon, France</span>
+              <span>Villeurbanne, France</span>
             </li>
             <li className="flex items-center gap-1.5">
               <Mail size={13} />
@@ -78,6 +78,7 @@ export default function Home() {
                 "Solidity",
                 "C#",
                 "C++",
+                "Python",
                 "SQL",
                 "HTML",
                 "CSS",
