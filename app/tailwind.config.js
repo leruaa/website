@@ -9,7 +9,7 @@ module.exports = {
               marginBottom: "0em",
             },
             h2: {
-              fontSize: "1.3em",
+              fontSize: "1.2em",
               marginTop: "1em",
               marginBottom: "0.5em",
             },
